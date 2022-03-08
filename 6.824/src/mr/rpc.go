@@ -23,7 +23,27 @@ type ExampleReply struct {
 }
 
 // Add your RPC definitions here.
+type WorkArgs struct {
+	Workerid string
+}
 
+type WorkReply struct {
+	Isfinished bool
+	Taskid int
+	Filename string
+	MapReduce string
+	BucketNum int
+}
+
+type CommitArgs struct {
+	Workerid string
+	Taskid int
+	MapReduce string
+}
+
+type CommitReply struct {
+	IsOK bool
+}
 
 // Cook up a unique-ish UNIX-domain socket name
 // in /var/tmp, for the coordinator.
