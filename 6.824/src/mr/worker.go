@@ -156,7 +156,7 @@ func Reduce(task WorkReply, reducef func(string, []string) string) error {
 
 	sort.Sort(ByKey(intermediate))
 	oname := "mr-out-" + strconv.Itoa(task.Taskid+1)
-	ofile, err := os.Create(oname)
+	ofile, err := ioutil.TempFile(".", oname)
 	if err != nil {
 		log.Fatal("Unable to create file: ", ofile)
 		return err

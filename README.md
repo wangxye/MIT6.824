@@ -1,6 +1,6 @@
 # MIT6.824 distributed systerm
 
-- [ ] lab1 MapReduce
+- [x] lab1 MapReduce
 
 - [ ]  lab2 Raft
   - [ ] 2A Leader Election and heartbeat
