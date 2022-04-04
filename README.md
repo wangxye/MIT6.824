@@ -3,7 +3,7 @@
 - [x] lab1 MapReduce
 
 - [ ]  lab2 Raft
-  - [ ] 2A Leader Election and heartbeat
+  - [x] 2A Leader Election and heartbeat
   - [ ] 2B Log Replication
   - [ ] 2C Persistence
   - [ ] 2D Log Compaction
